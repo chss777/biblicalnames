@@ -2,19 +2,21 @@
     box-sizing: border-box;
 }
 
-html {
+/* html {
     font-size: 1.5 vw;
-}
+} */
 
 body {
     position: relative;
-    background-color: #ddd;
-    /* background-image: url(https://everytexture.com/wp-content/uploads/2019/10/everytexture.com-stock-paper-texture-00081.jpg); */
-    background-attachment: scroll;
-    background-repeat: repeat;
     padding: 0 20px 0 20px;
-    background-image: url(img/page1.jpg);
-    background-size: 100vw 100vh;
+    background-color: #ddd;
+    background: url(img/page1.jpg) top center / 100vw 100vh scroll;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 5px;
+    }
 }
 
 header {
