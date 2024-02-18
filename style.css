@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.5 vw;
+}
+
+body {
+    position: relative;
+    background-color: #ccc;
+    /* background-image: url(https://everytexture.com/wp-content/uploads/2019/10/everytexture.com-stock-paper-texture-00081.jpg); */
+    background-attachment: fixed;
+    background-repeat: round;
+    padding-inline: 10px;
+    /* background-image: url(img/page1.jpg); */
+    background: linear-gradient(to right, #ddd, #bbb);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(77, 61, 93);
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+    /* height: 5vh; */
+    height: 2.5em;
+}
+
+#search {
+    font-size: 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 5px;
+}
+
+#form {
+    display: none;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+x-field,
+#RU,
+#ok-btn,
+#find {
+    margin-right: 5px;
+}
+
+#form,
+#inp,
+#ok-btn,
+#RU,
+#find {
+    height: 1.8em;
+}
+
+#inp {
+    min-width: 10rem;
+    max-width: 40vw;
+    border-radius: 5px;
+}
+
+x-field {
+    display: flex;
+    position: relative;
+}
+
+x-field .close {
+    position: absolute;
+    padding: 0;
+    right: .1em;
+    font-size: .8em;
+    top: -0.2em;
+    cursor: pointer;
+    opacity: .5;
+}
+
+#find,
+#RU,
+#ok-btn {
+    cursor: pointer;
+}
+
+#RU {
+    display: none;
+}
+
+#dictionary {
+    padding-top: 2rem;
+}
+
+#alf a {
+    margin-left: 5px;
+}
+
+sub,
+sup {
+    font-size: .7em;
+}
+
+h3 {
+    text-align: center;
+    font-weight: normal;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+h5 {
+    text-align: center;
+    font-weight: bold;
+}
