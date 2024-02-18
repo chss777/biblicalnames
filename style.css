@@ -10,11 +10,12 @@ body {
     position: relative;
     background-color: #ccc;
     /* background-image: url(https://everytexture.com/wp-content/uploads/2019/10/everytexture.com-stock-paper-texture-00081.jpg); */
-    background-attachment: fixed;
-    background-repeat: round;
-    padding-inline: 10px;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    padding: 0 20px 0 20px;
     background-image: url(img/page1.jpg);
-    background: linear-gradient(to right, #ddd, #bbb);
+    /* background: linear-gradient(to right, #ddd, #bbb); */
+    background-size: 100vw 200vh;
 }
 
 header {
