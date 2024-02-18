@@ -15,7 +15,7 @@ body {
     padding: 0 20px 0 20px;
     background-image: url(img/page1.jpg);
     /* background: linear-gradient(to right, #ddd, #bbb); */
-    background-size: 100vw 200vh;
+    background-size: 100vw 120vh;
 }
 
 header {
