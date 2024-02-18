@@ -13,7 +13,7 @@ body {
     background-attachment: fixed;
     background-repeat: round;
     padding-inline: 10px;
-    /* background-image: url(img/page1.jpg); */
+    background-image: url(img/page1.jpg);
     background: linear-gradient(to right, #ddd, #bbb);
 }
 
