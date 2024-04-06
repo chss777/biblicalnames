@@ -25,9 +25,21 @@ header {
     left: 0;
     background-color: rgb(77, 61, 93);
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     width: 100vw;
     height: 2.5em;
+}
+
+#logo {
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: .3em;
+    padding-top: 0.3em;
+}
+
+#logo img {
+    width: 1.8em;
+    height: 1.8em;
 }
 
 #search {
