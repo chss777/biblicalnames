@@ -56,7 +56,7 @@ dictionary.addEventListener("click", (event) => {
     if (event.target.tagName === "A") {
         dictionary.style.marginTop = "0";
         setTimeout(() => {
-            dictionary.style.marginTop = "4.5rem";
+            dictionary.style.marginTop = "4rem";
         }, 200);
     }
 });
@@ -70,7 +70,7 @@ function cross(val) {
     el.remove();
     inp.focus();
     setTimeout(() => {
-        dictionary.style.marginTop = "4.5rem";
+        dictionary.style.marginTop = "4rem";
     }, 100);
 }
 

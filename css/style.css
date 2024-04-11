@@ -8,17 +8,11 @@
 
 body {
     position: relative;
-    padding: 0 20px 0 20px;
     background-color: #ddd;
-    background: url(img/page1.jpg) top center / 100vw 100vh scroll;
+    background: url(../img/page1.jpg) top center / 100vw 100vh scroll;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding: 0 5px;
-    }
-}
-
+/* section 'header' */
 header {
     position: fixed;
     top: 0;
@@ -27,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    height: 2.5em;
+    height: 2.5rem;
 }
 
 #logo {
@@ -103,8 +97,17 @@ x-field .close {
     display: none;
 }
 
+
+/* section 'dictionary' */
 #dictionary {
-    padding-top: 2rem;
+    margin-top: 2.5rem;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    #dictionary {
+        padding: .1rem;
+    }
 }
 
 #alf a {
