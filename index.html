@@ -16,7 +16,7 @@
 
     gtag('config', 'G-F6Z1WE1YYK');
     </script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -43,6 +43,17 @@
             <button id="find" type="button" onclick="find()">Search</button>
         </div>
     </header>
+    <section id="menu">
+        <div id="comment" class="item" onclick="toComments()">
+            <figure id="viewcomm">
+                <svg width="20" height="20" fill="currentColor" class="bi bi-chat-left-text btn" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <figcaption style="font-size: 12px;"> Написать комментарий</figcaption>
+            </figure>
+        </div>  
+    </section>
     <div id="dictionary">
         <div style="text-align: center;">
             <h4>Д-р К. Костів</h4>
@@ -7910,10 +7921,10 @@
         </p>
         <br><br><br><br><br><br><br> <br><br><br><br><br><br><br> <br><br><br><br><br><br><br>
     </div>
-    <script src="listUA.js"></script>
-    <script src="listRU.js"></script>
-    <script src="dict.js"></script>
-    <script src="script.js"></script>
+    <script src="js/listUA.js"></script>
+    <script src="js/listRU.js"></script>
+    <script src="js/dict.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
