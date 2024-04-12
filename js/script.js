@@ -140,7 +140,9 @@ function ok(w) {
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
 
 var disqus_config = function () {
-    this.page.url = "http://127.0.0.1:5500/index.html";  // Replace PAGE_URL with your page's canonical URL variable
+    // Replace PAGE_URL with your page's canonical URL variable
+    this.page.url = "https://chss777.github.io/biblicalnames.ua/";
+    // this.page.url = "http://127.0.0.1:5500/index.html";  
     this.page.identifier = ""; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
