@@ -1,6 +1,7 @@
 "use strict";
-// 09.02.2024 р.
 
+const menu = document.getElementById('menu');
+const logo = document.getElementById('logo');
 
 const dictionary = document.getElementById("dictionary");
 const form = document.getElementById("form");
@@ -11,8 +12,19 @@ const ru = document.getElementById("RU");
 let show = true;
 const words = [];
 let list = listUA;
+var check = true; 
 
 form.addEventListener("click", (event) => event.preventDefault());
+
+logo.addEventListener('click', () => {
+    if (check) {
+        menu.style.display = 'block';
+        check = !check;
+    } else {
+        menu.style.display = 'none';
+        check = !check;
+    }
+});
 
 inp.addEventListener("input", () => {
     let d = inp.value.replace("ru: ", "").toUpperCase();
@@ -43,10 +55,8 @@ function find() {
         ru.style.display = "none";
         opt.replaceChildren();
         names.replaceChildren();
-        // document.querySelector("header").style.height = "7vh";
     } else {
         form.style.display = "none";
-        // document.querySelector("header").style.height = "5vh";
     }
     show = !show;
     inp.focus();
@@ -56,8 +66,11 @@ dictionary.addEventListener("click", (event) => {
     if (event.target.tagName === "A") {
         dictionary.style.marginTop = "0";
         setTimeout(() => {
-            dictionary.style.marginTop = "4rem";
+            dictionary.style.marginTop = "2.5rem";
         }, 200);
+    } else {
+        menu.style.display = 'none';
+        check = true
     }
 });
 
@@ -70,7 +83,7 @@ function cross(val) {
     el.remove();
     inp.focus();
     setTimeout(() => {
-        dictionary.style.marginTop = "4rem";
+        dictionary.style.marginTop = "2.5rem";
     }, 100);
 }
 
@@ -121,3 +134,30 @@ function ok(w) {
     }
     inp.focus();
 }
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+var disqus_config = function () {
+    this.page.url = "http://127.0.0.1:5500/index.html";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = ""; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+const disqus = document.getElementById('disqus');
+
+function toComments() { 
+    disqus.style.display = 'block';
+    menu.style.display = 'none';
+    var d = document, s = d.createElement('script');
+    s.src = 'https://biblicalnames-ua.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+}
+function offComments() {
+    disqus.style.display = 'none';
+    menu.style.display = 'none';
+    check = true
+}
+
+

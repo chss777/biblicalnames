@@ -13,7 +13,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-F6Z1WE1YYK');
     </script>
     <link rel="stylesheet" href="css/style.css">
@@ -43,6 +42,25 @@
             <button id="find" type="button" onclick="find()">Search</button>
         </div>
     </header>
+    <section id="menu">
+        <div id="comment" class="item" onclick="toComments()">
+            <figure id="viewcomm">
+                <svg width="20" height="20" fill="currentColor" class="bi bi-chat-left-text btn" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <figcaption> Напишіть Ваш комментар</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <div id="disqus">
+        <button id="hidecomm" type="button" onclick="offComments()">CLOSE</button>
+        <div id="disqus_thread"></div>
+        
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> 
+    </div>
+    
     <section id="dictionary">
         <div style="text-align: center;">
             <h4><b>Д-р К. Костів</b></h4>
@@ -7914,6 +7932,7 @@
     <script src="js/listRU.js"></script>
     <script src="js/dict.js"></script>
     <script src="js/script.js"></script>
+    <script id="dsq-count-scr" src="//biblicalnames-ua.disqus.com/count.js" async></script>
 </body>
 
 </html>

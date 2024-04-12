@@ -1,10 +1,8 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
-/* html {
-    font-size: 1.5 vw;
-} */
 
 body {
     position: relative;
@@ -13,6 +11,7 @@ body {
 }
 
 /* section 'header' */
+
 header {
     position: fixed;
     top: 0;
@@ -29,6 +28,7 @@ header {
     height: 2.5em;
     margin-left: .3em;
     padding-top: 0.3em;
+    cursor: pointer;
 }
 
 #logo img {
@@ -97,8 +97,73 @@ x-field .close {
     display: none;
 }
 
+/* section 'menu' */
+
+#menu {
+    position: fixed;
+    left: 0;
+    top: 2.5rem;
+    display: none;
+}
+
+.item {
+    width: 26rem;
+    height: 50px;
+    font-size: 1em;
+    background-color: rgb(0, 204, 255);
+    border: 1px solid green;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: .5rem;
+}
+
+#viewcomm {
+    display: flex;
+    justify-content: start;
+}
+
+svg {
+    margin-left: 1rem;
+    align-self: flex-end;
+}
+
+figcaption {
+    margin-left: 10px;
+}
+
+/* div 'disqus' */
+
+#disqus {
+    position: relative;
+    width: 100vw;
+    position: fixed;
+    top: 2.5rem;
+    background-color: #fff;
+    padding: 0 1em 1em 1em;
+    display: none;
+}
+
+#hidecomm {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #00f;
+    padding: 5px;
+    border: 3px solid #f00;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    #disqus {
+        width: 1200px;
+    }
+}
 
 /* section 'dictionary' */
+
 #dictionary {
     margin-top: 2.5rem;
     padding: 1rem;
