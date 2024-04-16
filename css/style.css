@@ -51,6 +51,10 @@ header {
     flex-wrap: nowrap;
 }
 
+#ok-btn {
+    width: 2em;
+}
+
 x-field,
 #RU,
 #ok-btn,
@@ -67,7 +71,7 @@ x-field,
 }
 
 #inp {
-    min-width: 10rem;
+    min-width: 12rem;
     max-width: 40vw;
     border-radius: 5px;
 }
