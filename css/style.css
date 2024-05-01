@@ -10,6 +10,7 @@ body {
     background: url(../img/page1.jpg) top center / 100vw 100vh scroll;
 }
 
+
 /* section 'header' */
 
 header {
@@ -30,7 +31,7 @@ header {
         & img {
             width: 1.8em;
             height: 1.8em;
-        }    
+        }
     }
     & #search {
         font-size: 2rem;
@@ -38,7 +39,7 @@ header {
         justify-content: end;
         align-items: center;
         margin-right: 10px;
-    }       
+    }
 }
 
 #form {
@@ -52,13 +53,13 @@ header {
     #find {
         margin-right: 5px;
         cursor: pointer;
-    }    
+    }
     & #RU {
         display: none;
     }
     & #ok-btn {
         width: 2rem;
-    }      
+    }
 }
 
 #form,
@@ -85,7 +86,7 @@ x-field {
         top: -0.2em;
         cursor: pointer;
         opacity: .5;
-    }       
+    }
 }
 
 
@@ -106,7 +107,7 @@ x-field {
         justify-content: start;
         align-items: center;
         padding-bottom: .5rem;
-    }    
+    }
 }
 
 #viewcomm {
@@ -118,8 +119,9 @@ x-field {
     }
     & figcaption {
         margin-left: 10px;
-    }        
+    }
 }
+
 
 /* div 'disqus' */
 
@@ -154,8 +156,8 @@ x-field {
 #dictionary {
     margin-top: 2.5rem;
     padding: 1rem;
-    @media (max-width: 768px) {
-        padding: .1rem;
+    @media (width < 768px) {
+        padding: 0 .7rem;
     }
     & #alf a {
         margin-left: 5px;
@@ -163,7 +165,7 @@ x-field {
     & sub,
     sup {
         font-size: .7em;
-    }      
+    }
 }
 
 h3 {

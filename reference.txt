@@ -1,3 +1,11 @@
 # adress:
 
 https://chss777.github.io/biblicalnames.ua/
+
+# disqus:
+
+https://biblicalnames-ua.disqus.com/admin/moderate/all
+
+# google analytics:
+
+https://analytics.google.com/analytics/web/?authuser=0#/p435454311/reports/dashboard?r=reporting-hub
