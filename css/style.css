@@ -73,7 +73,6 @@ header {
 #ok-btn,
 #RU,
 #find {
-    /* height: 1.8em; */
     height: 2.5rem;
     font-size: 1rem;
     font-weight: bold;
@@ -84,7 +83,6 @@ x-field {
     position: relative;
     & #inp {
         min-width: 10rem;
-        /* max-width: 24rem; */
         border-radius: 5px;
         margin-left: 7px;
     }
